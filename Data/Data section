@@ -1,0 +1,36 @@
+Data
+For this project we need the following data:
+•	New York City data that contains list Boroughs, Neighborhoods along with their latitude and longitude.
+	Data source: https://cocl.us/new_york_dataset
+	Description: This data set contains the required information. And we will use this data set to explore various neighborhoods of New York City.
+•	Turkish restaurants in each neighborhood of New York City.
+	Data source: Foursquare API
+	Description: By using this API we will get all the venues in each neighborhood. We can filter these venues to get only Turskih restaurants.
+•	GeoSpace data
+	Data source: https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm
+	Description: By using this geo space data we will get the New York City Borough boundaries that will help us visualize choropleth map.
+
+
+Approach
+•	Collect the New York City data from https://cocl.us/new_york_dataset
+•	Using Foursquare API we will find all venues for each neighborhood.
+•	Filter out all venues that are Turkish restaurants.
+•	Find ratings, tips and like count for each Turkish restaurant using Foursquare API.
+•	Using rating for each restaurant, we will sort that data.
+•	Visualize the Ranking of neighborhoods using folium library(python)
+
+Questions that can be asked using the above mentioned datasets
+
+•	What is best location in New York City for Turkish cuisine?
+•	Which areas have potential Turkish restaurant Market?
+•	Which all areas lack Turkish restaurants?
+•	Which is the best place to stay if I prefer Turkish cuisine?
+
+Analysis
+
+We will import the required libraries for python.
+•	pandas and numpy for handling data.
+•	request module for using Foursquare API.
+•	geopy to get co-ordinates of City of New York.
+•	folium to visualize the results on a map
+
